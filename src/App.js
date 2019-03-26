@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import DashboardAdmin from './View/DashboardAdmin';
-import Home from './View/Home';
 
 class App extends Component {
   render(){
     return (
-      <div className="">
-      <DashboardAdmin/>
+      <div>
         <Switch>
-          <Route excat path="/" Component={Home}/>
-          <Route path="/dashboard" Component={DashboardAdmin}/>
+          <Route exact path="/" component={DashboardAdmin}/>
         </Switch>
       </div>
     );
