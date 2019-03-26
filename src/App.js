@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import DashboardAdmin from './View/DashboardAdmin';
-import Home from './View/Home';
 import TambahBerita from './View/TambahBerita';
 
 class App extends Component {
@@ -9,8 +8,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/dashboard" component={DashboardAdmin}/>
+          <Route exact path="/" component={DashboardAdmin}/>
           <Route path="/tambahberita" component={TambahBerita}/>
         </Switch>
       </div>
