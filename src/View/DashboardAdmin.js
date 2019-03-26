@@ -9,14 +9,10 @@ import Image from 'react-bootstrap/Image';
 import '../Component/style.css'
 // import { Container, Row, Col } from 'react-bootstrap';
 const mainA = {
-    marginTop:'88px',
     height:'38px',
-    marginLeft:'-15px'
 };
 const btnB = {
-    marginTop:'88px',
     height:'38px',
-    marginRight:'10px'
 };
 const mainB = {
     height:'100px',
@@ -36,19 +32,19 @@ const bgButton = {
 const mbButton = {
     height:'40px',
     width:'100px'
-
 }
 const buttonFilter = {
     
 }
 const DashboardAdmin = () => (
     <Container>
-        <Row>
-            <Col md={2} xs={12} style={mainA}>
+        <Row style={{marginTop:'40px'}}>
+            <Col md={2} style={mainA}>
                 <Button variant="primary">Tambah Berita</Button>
             </Col>
-            <Col md={{offset:8}} style={btnB}>
-                <DropdownButton id="dropdown-basic-button" title="Tipe Berita" variant="warning" style={{color:'white'}}>
+            <Col md={8}></Col>
+            <Col md={2} style={btnB}>
+                <DropdownButton id="dropdown-basic-button" title="Tipe Berita" variant="warning">
                     <Dropdown.Item href="#/action-1">Lomba</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">Balang</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
@@ -56,158 +52,122 @@ const DashboardAdmin = () => (
             </Col>
         </Row>
         <Row>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
             </Col>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
             </Col>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
-            </Col>    
+            </Col>
         </Row>
-        <Row style={{marginTop:'350px'}}>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+        <Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
             </Col>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
             </Col>
-            <Col style={mainB}>
-                <div style={cardNews}>
-                    <div>
-                        <Row>
-                            <Col md={10} style={{backgroundColor:'black'}}>
-                                <Image src="../Image/pk2.jpg" className="img"></Image>
-                            </Col>
-                        </Row>
+            <Col md={4} className="cardArea">
+                <div className="cardBody">
+                    <div className="cardImage">
+                        <Image src="../Image/pk2.jpg" className="img"></Image>
                     </div>
-                    <div>
-                        <Row>
-                            <Col md={10} style={bgButton} className="bgButton"> 
-                                <Row style={{padding:'0px'}}>
-                                    <Col style={{marginTop:'10px',marginLeft:'30px'}}>
-                                        <Button variant="primary" style={mbButton} >Edit</Button>
-                                    </Col>
-                                    <Col style={{marginTop:'12px'}}>
-                                        <Button variant="danger" style={mbButton}>Hapus</Button>
-                                    </Col>
-                                </Row>
+                    <div className="cardButton">
+                        <Row style={{padding:'10px'}}>
+                            <Col md={2} xs={2} className={mbButton}></Col>
+                            <Col md={4} xs={4}className={mbButton}>
+                                <Button variant="primary" style={mbButton}>Edit</Button>
                             </Col>
+                            <Col md={4} xs={4} className={mbButton}>
+                                <Button variant="danger" style={mbButton}>Hapus</Button>
+                            </Col>
+                            <Col md={2} xs={2} className={mbButton}></Col>
                         </Row>
                     </div>
                 </div>
-            </Col>    
+            </Col>
         </Row>
     </Container>
 )
