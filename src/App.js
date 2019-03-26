@@ -7,7 +7,7 @@ import TambahBerita from './View/TambahBerita';
 class App extends Component {
   render(){
     return (
-      <div className="">
+      <div>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/dashboard" component={DashboardAdmin}/>
