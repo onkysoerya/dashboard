@@ -33,9 +33,6 @@ const mbButton = {
     height:'40px',
     width:'100px'
 }
-const buttonFilter = {
-    
-}
 const DashboardAdmin = () => (
     <Container>
         <Row style={{marginTop:'40px'}}>
