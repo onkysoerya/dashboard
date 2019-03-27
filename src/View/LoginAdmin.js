@@ -17,7 +17,7 @@ export default class LoginAdmin extends Component {
             <Row>
                 <Col md={7} className="card-area-admin">
                     <div className="cardLeft">
-                        <Image src="../Image/logobem4.png" className="img"></Image>
+                        <Image src="/Image/logobem4.png" className="img"></Image>
                     </div>
                 </Col>
                 <Col md={5} className="card-area-admin">
