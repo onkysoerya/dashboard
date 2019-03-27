@@ -15,12 +15,12 @@ export default class LoginAdmin extends Component {
       <div>
         <Container>
             <Row>
-                <Col md={7} className="cardArea">
+                <Col md={7} className="card-area-admin">
                     <div className="cardLeft">
                         <Image src="../Image/logobem4.png" className="img"></Image>
                     </div>
                 </Col>
-                <Col md={5} className="cardArea">
+                <Col md={5} className="card-area-admin">
                     <div className="cardRight">
                     <Form className="formLogin">
                         <Container>
