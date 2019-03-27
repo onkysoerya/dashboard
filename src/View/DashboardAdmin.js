@@ -40,7 +40,7 @@ const DashboardAdmin = () => (
     <Container>
         <Row style={{marginTop:'40px'}}>
             <Col md={2} style={mainA}>
-                <Button variant="primary">Tambah Berita</Button>
+                <a href="#/tambahberita"><Button variant="primary">Tambah Berita</Button></a>
             </Col>
             <Col md={8}></Col>
             <Col md={2} style={btnB}>
