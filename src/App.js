@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/" component={DashboardAdmin}/>
+          <Route exact path="/" component={DashboardAdmin} />
           <Route path="/tambahberita" component={TambahBerita}/>
           <Route path="/login" component={LoginAdmin}/>
         </Switch>
